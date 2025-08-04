@@ -15,7 +15,7 @@ const friendsData = [
     status: "Not Placed",
     tylLevel: "L4 A3 C4 P3.5 S3 Level: 3",
     linkedIn: "https://www.linkedin.com/in/aakarsh-divyam-291512309",
-    github: "https://www.linkedin.com/in/aakarsh-divyam-291512309"
+    github: "https://github.com/ChillyColor"
   },
   {
     name: "ANANT KUMAR GUPTA",
@@ -32,8 +32,8 @@ const friendsData = [
     placementType: "N/A",
     status: "Not Placed",
     tylLevel: "L4 A3 C4 P4 S3 Level: 3",
-    linkedIn: "https://www.linkedin.com/in/anant-kumar",
-    github: "https://github.com/anant-kumar"
+    linkedIn: "https://www.linkedin.com/in/anant-kumar-268346244",
+    github: "https://github.com/im47ak"
   },
   {
     name: "JAYANT RAJ",
