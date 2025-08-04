@@ -50,7 +50,7 @@ const friendsData = [
     placementType: "N/A",
     status: "Not Placed",
     tylLevel: "L4 A3 C2 P4 S3 Level: 3",
-    linkedIn: "https://www.linkedin.com/in/jayant-rajb43499330",
+    linkedIn: "https://www.linkedin.com/in/jayant-raj-b43499330",
     github: "https://github.com/jayant200803"
   },
   {
