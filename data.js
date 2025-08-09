@@ -31,7 +31,7 @@ const friendsData = [
     package: "N/A",
     placementType: "N/A",
     status: "Not Placed",
-    tylLevel: "L4 A3 C4 P4 S3 Level: 3",
+    tylLevel: "L4 A4 C4 P4 S3 Level: 4",
     linkedIn: "https://www.linkedin.com/in/anant-kumar-268346244",
     github: "https://github.com/im47ak"
   },
@@ -103,7 +103,7 @@ const friendsData = [
     package: "N/A",
     placementType: "N/A",
     status: "Not Placed",
-    tylLevel: "L4 A3 C4 P4 S3 Level: 3",
+    tylLevel: "L4 A4 C4 P4 S3 Level: 4",
     linkedIn: "https://www.linkedin.com/in/ratnesh-vaibhav-pandey-502570154",
     github: "https://github.com/Ratnesh433"
   },
