@@ -13,7 +13,7 @@ const friendsData = [
     package: "N/A",
     placementType: "N/A",
     status: "Not Placed",
-    tylLevel: "L4 A3 C4 P3.5 S3 Level: 3",
+    tylLevel: "L4 A3 C4 P4 S3 Level: 3",
     linkedIn: "https://www.linkedin.com/in/aakarsh-divyam-291512309",
     github: "https://github.com/ChillyColor"
   },
@@ -121,7 +121,7 @@ const friendsData = [
     package: "6,10,000",
     placementType: "Off Campus",
     status: "Placed",
-    tylLevel: "L4 A0 C4 P3.5 S3 Level: 3",
+    tylLevel: "L4 A0 C4 P4 S3 Level: 3",
     linkedIn: "https://www.linkedin.com/in/raunak-mishra-185a801b2",
     github: "N/A"
   }
