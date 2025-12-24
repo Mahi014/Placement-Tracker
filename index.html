@@ -3,14 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Placement Tracker</title>
+  <title>Placement Tracker - CMRIT</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
-    <h1 class="logo">Placement Tracker</h1>
-    <a href="https://github.com/Mahi014/Placement-Tracker.git" target="_blank" class="contribute-btn">Contribute</a>
+    <h1 class="logo">🎓 Placement Tracker</h1>
+    <a href="https://github.com/Mahi014/Placement-Tracker.git" target="_blank" class="contribute-btn">
+      ⭐ Contribute
+    </a>
   </header>
+
+  <section class="hero">
+    <h2>Class of 2026 - Placement Dashboard</h2>
+    <p>Track the placement journey of our talented students</p>
+  </section>
+
+  <section class="stats-bar" id="statsBar">
+    <div class="stat-item">
+      <span class="stat-number" id="totalStudents">0</span>
+      <span class="stat-label">Total Students</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" id="placedStudents">0</span>
+      <span class="stat-label">Placed</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" id="avgPackage">0</span>
+      <span class="stat-label">Avg Package (LPA)</span>
+    </div>
+  </section>
 
   <main>
     <div id="cardsContainer" class="tracker-container"></div>

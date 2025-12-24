@@ -2,152 +2,362 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
 }
 
 body {
-  background: #f5f7fa;
-  color: #1f2937;
-  line-height: 1.6;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 .header {
-  background-color: #1e293b;
-  color: #ffffff;
-  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
 }
 
 .contribute-btn {
-  background-color: #6366f1;
+  background: rgba(255, 255, 255, 0.2);
   color: white;
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
   text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .contribute-btn:hover {
-  background-color: #4f46e5;
-  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 5% 2rem;
+  animation: fadeIn 0.8s ease;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 5%;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .tracker-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
-  padding: 2rem 3%;
+  padding: 2rem 5% 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .card {
-  background-color: #ffffff;
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 2rem;
+  color: #1a1a2e;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
-  width: 100px;
-  height: 100px;
+.profile-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
+  border: 5px solid #667eea;
   margin-bottom: 1rem;
-  border: 3px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover .profile-pic {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .card h2 {
-  font-size: 1.2rem;
-  color: #111827;
-  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-.card p {
-  margin: 0.3rem 0;
-  font-size: 0.95rem;
-  color: #4b5563;
+.usn {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.info-item:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.info-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.info-value {
+  color: #1a1a2e;
+  font-weight: 500;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 1rem 0;
+}
+
+.status-placed {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.status-not-placed {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+}
+
+.company-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.package {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-top: 0.3rem;
 }
 
 .links {
-  margin-top: 0.8rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .links a {
+  flex: 1;
   text-decoration: none;
-  color: #2563eb;
-  font-weight: 500;
-  margin: 0 0.5rem;
-  transition: color 0.2s;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
 }
 
-.links a:hover {
-  color: #1d4ed8;
+.linkedin {
+  background: #0077b5;
+  color: white;
+}
+
+.linkedin:hover {
+  background: #005885;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+
+.github {
+  background: #333;
+  color: white;
+}
+
+.github:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 footer {
   text-align: center;
-  padding: 1.5rem 2rem;
-  background-color: #1e293b;
-  color: #e2e8f0;
-  font-size: 0.95rem;
-  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
 }
 
-@media (max-width: 600px) {
+footer p {
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
   .header {
     flex-direction: column;
-    align-items: flex-start;
     gap: 1rem;
+    padding: 1rem 5%;
   }
 
   .logo {
     font-size: 1.5rem;
   }
 
-  .contribute-btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
+  .hero h2 {
+    font-size: 2rem;
   }
 
-  .card {
-    padding: 1.2rem;
+  .hero p {
+    font-size: 1rem;
   }
 
-  .card img {
-    width: 80px;
-    height: 80px;
+  .stats-bar {
+    gap: 1.5rem;
   }
 
-  .card h2 {
-    font-size: 1.1rem;
+  .stat-item {
+    padding: 1rem 1.5rem;
   }
 
-  .card p {
-    font-size: 0.9rem;
+  .stat-number {
+    font-size: 2rem;
   }
 
-  .links a {
-    font-size: 0.9rem;
-    margin: 0 0.3rem;
+  .tracker-container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 5%;
   }
 
-  footer {
-    font-size: 0.85rem;
-    padding: 1rem;
+  .profile-pic {
+    width: 100px;
+    height: 100px;
   }
 }
