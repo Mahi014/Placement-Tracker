@@ -3,34 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Placement Tracker - CMRIT</title>
+  <title>Placement Tracker - CMRIT Class of 2026</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
   <header class="header">
-    <h1 class="logo">🎓 Placement Tracker</h1>
-    <a href="https://github.com/Mahi014/Placement-Tracker.git" target="_blank" class="contribute-btn">
-      ⭐ Contribute
-    </a>
+    <div class="header-content">
+      <h1 class="logo">
+        <span class="logo-icon">🎓</span>
+        <span class="logo-text">Placement Diaries</span>
+      </h1>
+      <a href="https://github.com/Mahi014/Placement-Tracker.git" target="_blank" class="contribute-btn">
+        <span class="btn-icon">⭐</span>
+        <span>Contribute</span>
+      </a>
+    </div>
   </header>
 
   <section class="hero">
-    <h2>Class of 2026 - Placement Dashboard</h2>
-    <p>Tracking where all the homies ended up</p>
+    <div class="hero-badge">Class of 2026</div>
+    <h2 class="hero-title">Placement Dashboard</h2>
+    <p class="hero-subtitle">Tracking where all the homies ended up</p>
   </section>
 
-  <section class="stats-bar" id="statsBar">
-    <div class="stat-item">
-      <span class="stat-number" id="totalStudents">0</span>
-      <span class="stat-label">Total Students</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number" id="placedStudents">0</span>
-      <span class="stat-label">Placed</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number" id="avgPackage">0</span>
-      <span class="stat-label">Avg Package (LPA)</span>
+  <section class="stats-section">
+    <div class="stats-container" id="statsBar">
+      <div class="stat-card">
+        <div class="stat-icon">👥</div>
+        <div class="stat-content">
+          <span class="stat-number" id="totalStudents">0</span>
+          <span class="stat-label">Total Friends</span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-success">
+        <div class="stat-icon">✨</div>
+        <div class="stat-content">
+          <span class="stat-number" id="placedStudents">0</span>
+          <span class="stat-label">Successfully Placed</span>
+        </div>
+      </div>
+      <div class="stat-card stat-card-primary">
+        <div class="stat-icon">💰</div>
+        <div class="stat-content">
+          <span class="stat-number" id="avgPackage">0</span>
+          <span class="stat-label">Avg Package (LPA)</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -38,8 +66,11 @@
     <div id="cardsContainer" class="tracker-container"></div>
   </main>
 
-  <footer>
-    <p>Made with ❤️ by Mahender Singh</p>
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">Made with <span class="heart">❤️</span> by <strong>Mahender Singh</strong></p>
+      <p class="footer-tagline">Different companies, same group chat</p>
+    </div>
   </footer>
 
   <script src="data.js"></script>
