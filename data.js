@@ -10,7 +10,7 @@ const friendsData = [
     emailid: "aadi22cs@cmrit.ac.in",
     company: "LG",
     role: "MANUAL TESTING -ASSOCIATE",
-    package: "4.10",
+    package: "4.1",
     placementType: "On Campus",
     status: "Placed",
     tylLevel: "L4 A4 C4 P4 S3 Level: 4",
